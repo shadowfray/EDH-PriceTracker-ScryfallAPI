@@ -49,11 +49,8 @@ def main(csvfilepath):
 
     
     print('Assembling search...')
-
-    for i in searchterms:
-        searchURL = searchURL + i + '+'
-        
-    searchURL = searchURL[:-1] #removes last excess + sign
+ 
+    searchURL += "+".join(searchterms)
 
     print('Final search link:', searchURL)
 
