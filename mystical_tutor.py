@@ -61,7 +61,6 @@ def main(csvfilepath):
         print('ERROR, Status Code: 200')
         input('Press Enter to exit...')
         exit()
-        return None
 
     results = response.json()
     results_list = results['data']
